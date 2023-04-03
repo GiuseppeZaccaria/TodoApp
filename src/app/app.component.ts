@@ -10,6 +10,9 @@ import {selectHttpError} from "./store/selector";
 })
 
 export class AppComponent {
+
+  title = 'newApp';
+
   httpError$: Observable<boolean>
 
   dataSets = [ {
@@ -26,7 +29,7 @@ export class AppComponent {
     }];
 
   constructor(private store: Store) {
-    this.httpError$ = this.store.pipe(select(selectHttpError));
+    if (this.store){this.httpError$ = this.store.pipe(select(selectHttpError))};
   }
 
 
