@@ -1,0 +1,33 @@
+<div class="container mt-2">
+  <div class="row">
+
+    <div class="col-12">
+      <h1 class="text-center my-4">
+        Dettaglio todo
+      </h1>
+    </div>
+  </div>
+
+ <div class="col-12 shadow-custom mt-3">
+   <div class=" mb-3">
+     <div class="row no-gutters">
+       <div class="col-md-4">
+         <img src="https://picsum.photos/600/550" alt="Immagine di esempio" class="img-fluid">
+       </div>
+       <div class="col-md-8">
+         <div class="card-body">
+           <h5 class="card-title mt-3">{{ todo?.text }}</h5>
+           <p class="card-text">{{ todo?.todo ? 'Attivo' : 'Non attivo'}}</p>
+           <hr>
+           <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <button class="btn btn-secondary my-3 float-end me-3" (click)="goBack()">Indietro</button>
+         </div>
+
+       </div>
+     </div>
+   </div>
+ </div>
+
+
+
+</div>

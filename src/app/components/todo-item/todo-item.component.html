@@ -1,0 +1,11 @@
+<div class="col-12 todo d-flex ">
+  <label class="switch-small mt-1 mx-2">
+    <input type="checkbox" [checked]="todo?.todo" (click)="toggleTodo(todo?.id)">
+    <span class="slider round"></span>
+  </label>
+  <button class="btn btn-primary" style="border-radius: 20px" (click)="replyTodo(todo)"><i class="bi bi-reply"></i></button>
+  <button class="btn btn-primary mx-2" style="border-radius: 20px" (click)="removeTodo(todo?.id)"><i class="bi bi-trash3"></i></button>
+  <span class="mx-2 mt-1" style="cursor: pointer" (click)="goToDetailTodo(todo)" [ngClass]="{'not-todo': !todo?.todo}">
+    <b>{{todo?.text}}</b>
+  </span>
+</div>

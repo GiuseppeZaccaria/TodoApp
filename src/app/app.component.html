@@ -1,0 +1,4 @@
+<div *ngIf="httpError$ | async" class="text-center alert alert-danger" role="alert">
+  Si è verificato un errore durante la chiamata HTTP!
+</div>
+<router-outlet></router-outlet>

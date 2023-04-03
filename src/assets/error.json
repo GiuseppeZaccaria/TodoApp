@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "normalizedNames": {},
+    "lazyUpdate": null
+  },
+  "status": 404,
+  "statusText": "Not Found",
+  "url": "https://api.example.com/users/123",
+  "ok": false,
+  "name": "HttpErrorResponse",
+  "message": "Http failure response for https://api.example.com/users/123: 404 Not Found",
+  "error": {
+    "code": 404,
+    "message": "User not found"
+  }
+}
