@@ -17,6 +17,8 @@ import { LoginComponent } from './pages/login/login.component';
 import { TodoItemComponent } from './components/todo-item/todo-item.component';
 import { TableComponent } from './components/table/table.component';
 import { ChartComponent } from './components/chart/chart.component';
+import {AuthGuard} from "./auth.guard";
+import { MyDirectiveDirective } from './directives/my-directive.directive';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,7 @@ import { ChartComponent } from './components/chart/chart.component';
     TodoItemComponent,
     TableComponent,
     ChartComponent,
+    MyDirectiveDirective,
   ],
   imports: [
     BrowserModule,
@@ -38,7 +41,7 @@ import { ChartComponent } from './components/chart/chart.component';
     EffectsModule.forRoot([TodoEffects]),
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

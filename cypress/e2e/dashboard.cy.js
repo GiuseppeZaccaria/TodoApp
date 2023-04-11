@@ -41,7 +41,7 @@ describe('Test actions', () => {
     cy.get('#username').type('test');
     cy.get('#password').type('test');
     cy.get('.btn').click();
-    cy.get('.mt-3 > .col-12 > :nth-child(1)');
+    cy.get(':nth-child(3) > todo-item > .col-12');
     cy.get('.not-todo-container');
   })
 
