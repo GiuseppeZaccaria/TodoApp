@@ -21,4 +21,5 @@ describe('MyDirectiveDirective', () => {
     spectator.dispatchMouseEvent(spectator.element, 'mouseleave');
     expect(spectator.element).not.toHaveStyle({ 'background-color': 'yellow' });
   });
+
 });
